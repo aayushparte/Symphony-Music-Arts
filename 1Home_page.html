@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Music & Arts</title>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+
+        .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+
+        .aa {
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .aa:hover {
+            color: #ffd524;
+        }
+
+        .aa::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ffd524;
+            transition: width 0.3s ease;
+        }
+
+        .aa:hover::after {
+            width: 100%;
+        }
+
+        .belownav{
+            width: 1540px;
+            height: 100px;
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+            animation: fadeInUp 1s ease-out both;
+        }
+
+        .image1{
+            width: 1540px;
+            margin-left: -10px;
+            height: 250px;
+        }
+
+        .image2{
+            height: 180px;
+            width: 650px;
+            margin-left: 860px;
+            margin-top: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-out both;
+            transition: transform 0.4s ease;
+        }
+
+        .image2:hover {
+            transform: scale(1.03);
+        }
+
+        .desc1{
+            height: 200px;
+            width: 600px;
+            margin-top: -205px;
+            margin-left: 125px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out both;
+        }
+
+        .desc2{
+            font-size: 25px;
+            color: #55185d;
+        }
+
+        .desc3{
+            font-size:18px;
+        }
+
+        .desc4{
+            font-size: 18px;
+            color: rgb(76, 0, 255);
+        }
+
+        .b1{
+            position: absolute;
+            height: 40px;
+            width: 200px;
+            margin-left: 580px;
+            margin-top:-7px;
+            border-radius: 10px;
+            background-color: rgb(251, 185, 62);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .b1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .b1content{
+            margin-top: 4px;
+            font-size: 18px;
+            font-family: cursive;
+            color: rgb(59, 59, 59);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo1" src="./logo2.jpg" alt="">
+        <div class="navdiv">
+            <a class="aa" href="./1Home_page.html">HOME</a>
+            <a class="aa" href="./2About_us_page.html">ABOUT US</a>
+            <a class="aa" href="./3Services_page.html">SERVICES</a>
+            <a class="aa" href="./4Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+            <a class="aa" href="./5Contact_us_page.html">CONTACT US</a>
+            <a class="aa" href="./7Login_page.html">LOGIN</a>
+        </div>
+    </nav>
+
+    <div class="belownav">
+        <img class="logo2" src="./logo3.jpg" alt="">
+        <p class="title">Symphony Music & Arts</p>
+    </div>
+
+    <img class="image1" src="./image1.jpg" alt="">
+    <img class="image2" src="./image2.jpg" alt="">
+
+    <div class="desc1">
+        <p class="desc2">Welcome to Symphony Music & Arts</p>
+        <p class="desc3">
+            Symphony Music & Arts is Pune's top rated Music training center & Event Organizer in 2024 & 2025 and one of the most elite and professional organization in Pune. Music is our life, our business and our passion. We specialize…
+        </p>
+        <a class="desc4" href="./2About_us_page.html"><p>learn more...</p></a>
+    </div>
+
+    <button onclick="reg()" class="b1"><p class="b1content">Register Now !</p></button>
+
+    <script>
+        function reg() {
+            window.location.href = "./6Registration_page.html";
+        }
+    </script>
+</body>
+</html>

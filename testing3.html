@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form | Symphony Music</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+        .aa{
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .aa:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1540px;
+            height: 100px;
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    .main-layout {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 30px;
+      gap: 20px;
+    }
+
+    .form-section {
+      flex: 2;
+      min-width: 300px;
+      background-color: white;
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background-color: orange;
+      color: white;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .sidebar input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 5px 0;
+    }
+
+    .sidebar p {
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+            <img class="logo1" src="./logo2.jpg" alt="">
+            <div class="navdiv">
+                <a class="aa" href="./Home_page.html">HOME</a>
+                <a class="aa" href="./About_us_page.html">ABOUT US</a>
+                <a class="aa" href="./Services_page.html">SERVICES</a>
+                <a class="aa" href="./Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+                <a class="aa" href="./Contact_us_page.html">CONTACT US</a>
+                <a class="aa" href="./Login_page.html">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./logo3.jpg" alt="">
+            <p class="title">Symphony Music & Arts</p>
+        </div>
+  <!-- Main Layout -->
+  <main class="main-layout">
+    <!-- Form -->
+    <section class="form-section">
+      <form id="contactForm">
+        <label>Your Name (required)</label>
+        <input type="text" required />
+
+        <label>Your Email (required)</label>
+        <input type="email" required />
+
+        <label>Subject</label>
+        <input type="text" />
+
+        <label>Your Message</label>
+        <textarea rows="6"></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <input type="text" placeholder="Search..." />
+
+      <h3>Our Services</h3>
+      <ul>
+        <li>Rangoli Orders</li>
+        <li>Other</li>
+        <li>Birthday Party Events</li>
+        <li>Karaoke</li>
+      </ul>
+
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Enquire Now!</li>
+        <li>Contact</li>
+      </ul>
+
+      <h3>Total Visits</h3>
+      <p>0017290</p>
+    </aside>
+  </main>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    });
+  </script>
+</body>
+</html>

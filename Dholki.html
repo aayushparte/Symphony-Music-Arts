@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+        .aa{
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .aa:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1540px;
+            height: 100px;  
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    body 
+      {
+        font-family: Times New Roman;
+        line-height: 1.5;
+        background-color: #fff;
+        color: #333;
+      }
+      
+/* Banner Image */
+    .banner img 
+       {
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+
+/* Content Section */
+     .content 
+      {
+         padding: 30px 20px;
+         max-width: 1000px;
+         margin: auto;
+      }
+
+    .content h2
+      {
+         font-size: 2.0rem;
+         margin-bottom: 15px;
+         color: #111;
+      }
+
+    .content p
+      {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+    .program ul 
+      {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+    .program li
+      {
+        margin-bottom: 10px;
+        list-style-type: disc;
+      }
+
+/* Book Now Button */
+    .book-now-btn 
+      {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+    .book-now-btn button 
+      {
+        background-color: orange;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+/* Responsive Design */
+    @media (max-width: 768px)
+    {
+      .header-section h1
+      {
+          font-size: 2rem;
+      }
+
+      .content 
+      {
+        padding: 20px 15px;
+      }
+
+      .book-now-btn button
+      {
+        width: 80%;
+        font-size: 1rem;
+      }
+    }
+    </style>
+  </head>
+  
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar">
+            <img class="logo1" src="./log2.jpg" alt="">
+            <div class="navdiv">
+            <a class="aa" href="./1Home_page.html">HOME</a>
+            <a class="aa" href="./2About_us_page.html">ABOUT US</a>
+            <a class="aa" href="./3Services_page.html">SERVICES</a>
+            <a class="aa" href="./4Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+            <a class="aa" href="./5Contact_us_page.html">CONTACT US</a>
+            <a class="aa" href="./7Login_page.html">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./log3.jpg" alt="">
+            <p class="title">Dholaki</p>
+        </div>
+        
+  <!-- Banner Image -->
+  <div class="banner">
+    <img src="DholkiPage.jpg" alt="Centered Image" />
+  </div>
+
+  <!-- Content Section -->
+  <main class="content">
+    <section class="intro">
+      <h2>Looking for Dholaki class</h2>
+      <p>
+       Bring the festive spirit alive with Dholaki Classes at Symphony Music & Arts! The dholaki, a beloved hand drum widely used in folk, devotional, and celebratory music, is perfect for anyone who loves rhythm and cultural music.
+       Whether you’re a beginner or want to enhance your playing skills, our experienced instructors will teach you traditional beats, rhythms, and performance techniques that make the dholaki so special.
+      </p>
+    </section>
+
+    <section class="progrm">
+      <h2>Why to learn Dholaki at Symphony Music & Arts?</h2>
+      <ul>
+      <li>Basic hand techniques and strokes</li>
+      <li>Popular folk and devotional rhythms</li>
+      <li>Playing styles for bhajans, garbas, and regional music</li>
+      <li>Accompaniment and solo playing skills</li>
+      <li>Performance and stage presence tips</li>
+      <li>Understanding rhythm cycles and tempo control</li>
+      </ul>
+    </section>
+
+    <div class="book-now-btn">
+      <button onclick="reg()">Book Now !</button>
+    </div>
+  </main>
+   <script>
+    function reg() {
+    window.location.href = "./Registration_page.html";
+  }
+   </script>
+  </body>
+</html>
+
+
+
+
+

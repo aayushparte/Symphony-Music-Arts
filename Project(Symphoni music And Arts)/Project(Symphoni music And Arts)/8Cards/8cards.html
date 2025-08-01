@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .navbar{
+            margin-top: -20px;
+            background-color: #55185d;
+            height: 50px;
+            width: 1520px;
+            margin-left: -20px;
+        }
+        .logo1{
+            position: absolute;
+            height:60px;
+            margin-top: -10px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -15px;
+        }
+        a{
+            margin-top: 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1520px;
+            height: 80px;
+            margin-left: -20px;
+            margin-top: -5px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 90px;
+            margin-top: -10px;
+            width: 250px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -90px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    *{
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    body 
+    {
+        font-family: Times New Roman, sans-serif;
+    }
+/* Services Grid */
+    .services 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 10px;
+    }
+
+    .card
+    {
+      background-color: #fffbe0;
+      border: 2px solid #e6e6e6;
+      border-radius: 10px;
+      width: 180px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img 
+    {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card button 
+    {
+      
+    background-color: #f1c6f7;
+    border:none;
+    padding: 8px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+    .card p 
+    {
+      font-size: 20px;
+    }
+
+    .footer-image
+    {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  .footer-image img
+  {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+/* Bottom Button */
+  .book-bottom 
+  {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .book-bottom button 
+  {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Responsive Design */
+    @media (max-width: 768px) 
+  {
+    .services 
+    {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+   <!--Nav Bar-->
+    <nav class="navbar">
+            <img class="logo1" src="./log2.jpg" alt="">
+            <div class="navdiv">
+                <a href="#home">HOME</a>
+                <a href="#aboutus">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#musicalinstruments">MUSICAL INSTRUMENTS</a>
+                <a href="#contactus">CONTACT US</a>
+                <a href="#login">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./log3.jpg" alt="">
+            <p class="title">Symphony Music & Arts</p>
+        </div>
+  <section class="services">
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/singing.jpg" alt="Singing" />
+    <button>Book Now !</button><p>Singing</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/acting.jpg" alt="Acting" />
+    <button>Book Now !</button><p>Acting</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/zumba.jpg" alt="Zumba" />
+    <button>Book Now !</button><p>Zumba</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/drawing.jpg" alt="Drawing" />
+    <button>Book Now !</button><p>Drawing</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/dancing.jpg" alt="Dancing" />
+    <button>Book Now !</button><p>Dancing</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/karaoke.jpg" alt="Karaoke" />
+    <button>Book Now !</button><p>Karaoke</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/yoga.jpg" alt="Yoga" />
+    <button>Book Now !</button><p>Yoga</p></div>
+    <div class="card"><img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/rangoli.jpg" alt="Rangoli" />
+    <button>Book Now !</button><p>Rangoli</p></div>
+  </section>
+
+  <div class="footer-image">
+    <img src="https://uploads.onecompiler.io/43r2h32z6/43r2gx8d6/music-footer.jpg" alt="Music Art" />
+  </div>
+
+  <div class="book-bottom">
+    <button>Book Now !</button>
+  </div>
+  
+</body>
+</html>

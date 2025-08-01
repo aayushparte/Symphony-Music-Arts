@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .logout-btn {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      float: right;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .logout-btn:hover {
+      background-color: #c2185b;
+    }
+
+    ul {
+      margin-top: 10px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>4
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, Aayush!</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>My Enrolled Courses</h2>
+      <ul>
+        <li>🎨 Drawing</li>
+        <li>🎸 Guitar</li>
+        <li>🎹 Keyboard</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Upcoming Classes</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Course</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>24 July 2025</td>
+          <td>Keyboard</td>
+          <td>5:00 PM</td>
+        </tr>
+        <tr>
+          <td>25 July 2025</td>
+          <td>Drawing</td>
+          <td>4:00 PM</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Learning Materials</h2>
+      <ul>
+        <li><a href="#" target="_blank">🎵 Guitar Basics (PDF)</a></li>
+        <li><a href="#" target="_blank">🎨 Sketching Techniques (Video)</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Announcements</h2>
+      <ul>
+        <li>🎉 Art competition on 30th July – Register now!</li>
+        <li>⚠️ Keyboard class on 26th July is rescheduled to 27th July.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>My Profile</h2>
+      <p><strong>Full Name:</strong> Aayush Parte</p>
+      <p><strong>Email:</strong> aayush@example.com</p>
+      <p><strong>Enrollment No:</strong> 23211050273</p>
+    </div>
+
+  </div>
+
+  <script>
+    function logout() {
+      alert("You have been logged out.");
+      // In real app, redirect to login page
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>

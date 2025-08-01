@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Music & Arts</title>
+    <style>
+        .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+        .aa{
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .aa:hover{
+            color: #ffd524;
+        }
+        .aa::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ffd524;
+            transition: width 0.3s ease;
+        }
+
+        .aa:hover::after {
+            width: 100%;
+        }
+        .belownav{
+            width: 1540px;
+            height: 100px;  
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <img class="logo1" src="./logo2.jpg" alt="">
+            <div class="navdiv">
+                <a class="aa" href="./Home_page.html">HOME</a>
+                <a class="aa" href="./About_us_page.html">ABOUT US</a>
+                <a class="aa" href="./Services_page.html">SERVICES</a>
+                <a class="aa" href="./Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+                <a class="aa" href="./Contact_us_page.html">CONTACT US</a>
+                <a class="aa" href="./Login_page.html">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./logo3.jpg" alt="">
+            <p class="title">Symphony Music & Arts</p>
+        </div>
+</body>
+</html>

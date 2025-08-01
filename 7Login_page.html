@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+        .aa{
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .aa:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1540px;
+            height: 100px;
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 850px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-heading {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .login-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .login-button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+            <img class="logo1" src="./logo2.jpg" alt="">
+            <div class="navdiv">
+                <a class="aa" href="./1Home_page.html">HOME</a>
+                <a class="aa" href="./2About_us_page.html">ABOUT US</a>
+                <a class="aa" href="./3Services_page.html">SERVICES</a>
+                <a class="aa" href="./4Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+                <a class="aa" href="./5Contact_us_page.html">CONTACT US</a>
+                <a class="aa" href="./7Login_page.html">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./logo3.jpg" alt="">
+            <p class="title">Login</p>
+        </div>
+
+  <div class="login-container">
+    <h1 class="login-heading">Select Login Type</h1>
+    <div class="login-buttons">
+      <button class="login-button" onclick="handleLogin('student')">Student Login</button>
+      <button class="login-button" onclick="handleLogin('admin')">Admin Login</button>
+    </div>
+  </div>
+
+
+  <script>
+    function handleLogin(userType) {
+      if (userType === 'student') {
+        window.location.href = './8Student_login_page.html';
+      } else if (userType === 'admin') {
+        window.location.href = './9Admin_login_page.html';
+      }
+    }
+  </script>
+
+</body>
+</html>

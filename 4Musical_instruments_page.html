@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: #55185d;
+            height: 50px;
+            width: 1540px;
+            margin-left: -10px;
+        }
+        .logo1{
+            position: absolute;
+            height:50px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -10px;
+        }
+        .aa{
+            margin-top: 12px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .aa:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1540px;
+            height: 100px;  
+            margin-left: -10px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 100px;
+            width: 300px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 700px;
+            margin-top: -87px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    *{
+        margin: px;
+        padding: px;
+        box-sizing: border-box;
+    }
+
+    body 
+    {
+        font-family: Times New Roman, sans-serif;
+    }
+/* Services Grid */
+    .services 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 10px;
+    }
+
+    .card
+    {
+      background-color: #fffbe0;
+      border: 2px solid #e6e6e6;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img 
+    {
+      width: 170px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card button 
+    {
+      
+    background-color: #f1c6f7;
+    border:none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+    .card p 
+    {
+      font-size: 27px;
+    }
+
+    .footer-image
+    {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  .footer-image img
+  {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+/* Bottom Button */
+  .book-bottom 
+  {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .book-bottom button 
+  {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Responsive Design */
+    @media (max-width: 768px) 
+  {
+    .services 
+    {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+     <!--Nav Bar-->
+    <nav class="navbar">
+            <img class="logo1" src="./logo2.jpg" alt="">
+            <div class="navdiv">
+                <a class="aa" href="./1Home_page.html">HOME</a>
+                <a class="aa" href="./2About_us_page.html">ABOUT US</a>
+                <a class="aa" href="./3Services_page.html">SERVICES</a>
+                <a class="aa" href="./4Musical_instruments_page.html">MUSICAL INSTRUMENTS</a>
+                <a class="aa" href="./5Contact_us_page.html">CONTACT US</a>
+                <a class="aa" href="./7Login_page.html">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./logo3.jpg" alt="">
+            <p class="title">Instruments Training</p>
+        </div>
+  <section class="services">
+    <div class="card"><img src="Harmoniam.jpg" alt="Harmonium" />
+    <button onclick="reg()">Book Now !</button><p onclick="harmonium()" style="cursor: pointer;">Harmonium</p></div>
+    <div class="card"><img src="Gitar.jpg" alt="Guitar" />
+    <button onclick="reg()">Book Now !</button><p onclick="guitar()" style="cursor: pointer;">Guitar</p></div>
+    <div class="card"><img src="Tabla.jpg" alt="Tabla" />
+    <button onclick="reg()">Book Now !</button><p onclick="tabla()" style="cursor: pointer;">Tabla</p></div>
+    <div class="card"><img src="Dholkii.jpg" alt="Dholaki" />
+    <button onclick="reg()">Book Now !</button><p onclick="dholaki()" style="cursor: pointer;">Dholaki</p></div>
+    <div class="card"><img src="Drumspage.jpg" alt="Drums" />
+    <button onclick="reg()">Book Now !</button><p onclick="drums()" style="cursor: pointer;">Drums</p></div>
+    <div class="card"><img src="keyboard.html.jpg" alt="Keyboard" />
+    <button onclick="reg()">Book Now !</button><p onclick="keyboard()" style="cursor: pointer;">Keyboard</p></div>
+  </section>
+
+  <div class="footer-image">
+    <img src=6cards.jpg alt="Music Art" />
+  </div>
+
+  <div class="book-bottom">
+    <button onclick="reg()">Book Now !</button>
+  </div>
+  <script>
+    function harmonium() {
+    window.location.href = "./Harmonium.html";
+  }
+  function guitar() {
+    window.location.href = "./Guitar.html";
+  }
+  function tabla() {
+    window.location.href = "./Tabla.html";
+  }
+  function dholaki() {
+    window.location.href = "./Dholki.html";
+  }
+  function drums() {
+    window.location.href = "./Drums.html";
+  }
+  function keyboard() {
+    window.location.href = "./Keyboard.html";
+  }
+  function reg() {
+    window.location.href = "./6Registration_page.html";
+  }
+  </script>
+</body>
+</html>

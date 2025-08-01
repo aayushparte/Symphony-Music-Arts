@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Symphony Music</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #4b007d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: #fcd900;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #4b007d;
+}
+
+.contact-section {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.book-btn {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.address-box {
+  background-color: #ddd;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.main-layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.map-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🎵</div>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">OUR SERVICES</a></li>
+      <li><a href="#">MUSICAL TRAINING</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="banner-image.jpg" alt="Banner" />
+    <h1>Contact Us</h1>
+  </div>
+
+  <!-- Contact Info -->
+  <section class="contact-section">
+    <div class="info-block">
+      <p><strong>📞 Phone:</strong> +91 9008007001</p>
+      <p><strong>📧 Email:</strong> symphonymusic@gmail.com</p>
+      <p><strong>📍 Location:</strong> Pune</p>
+    </div>
+    <button class="book-btn">Book Now!</button>
+  </section>
+
+  <!-- Address -->
+  <div class="address-box">
+    <p>Address: S2/2, Sahyadri Co Op Society, next to Saily Medical Stores, Shivajinagar, Pune, Maharashtra 400042.</p>
+    <p>Mobile: +91 9008007001</p>
+    <p>Email: symphonymusic@gmail.com</p>
+  </div>
+
+  <!-- Main content layout -->
+  <main class="main-layout">
+    <!-- Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.447788391272!2d73.84284757489563!3d18.5545674825431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf65d4c9a3c7%3A0xa2456b5f2c6c346d!2sShivajinagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1621234567890"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <input type="text" placeholder="Search..." />
+      <h3>Our Services</h3>
+      <ul>
+        <li>Rangoli Orders</li>
+        <li>Other</li>
+        <li>Birthday Party Events</li>
+        <li>Karaoke</li>
+      </ul>
+
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Enquire Now!</li>
+        <li>Contact</li>
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>

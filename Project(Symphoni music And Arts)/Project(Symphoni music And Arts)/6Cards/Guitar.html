@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .navbar{
+            margin-top: -20px;
+            background-color: #55185d;
+            height: 50px;
+            width: 1520px;
+            margin-left: -20px;
+        }
+        .logo1{
+            position: absolute;
+            height:60px;
+            margin-top: -10px;
+            margin-left: 75px;
+        }
+        .navdiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -15px;
+        }
+        a{
+            margin-top: 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a:hover{
+            color: #ffd524;
+        }
+        .belownav{
+            width: 1520px;
+            height: 80px;
+            margin-left: -20px;
+            margin-top: -5px;
+            background-color: #ffd524;
+        }
+        .logo2{
+            height: 90px;
+            margin-top: -10px;
+            width: 250px;
+            margin-left: 50px;
+        }
+        .title{
+            color: #55185d;
+            font-size: 55px;
+            margin-left: 650px;
+            margin-top: -100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+      * {
+           margin: 5px;
+           padding: 5px;
+           box-sizing: border-box;
+        }
+
+    body 
+      {
+        font-family: Times New Roman;
+        line-height: 1.5;
+        background-color: #fff;
+        color: #333;
+      }
+      
+/* Banner Image */
+    .banner img 
+       {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+
+/* Content Section */
+     .content 
+      {
+         padding: 30px 20px;
+         max-width: 1000px;
+         margin: auto;
+      }
+
+    .content h2
+      {
+         font-size: 2.0rem;
+         margin-bottom: 15px;
+         color: #111;
+      }
+
+    .content p
+      {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+    .program ul 
+      {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+    .program li
+      {
+        margin-bottom: 10px;
+        list-style-type: disc;
+      }
+
+/* Book Now Button */
+    .book-now-btn 
+      {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+    .book-now-btn button 
+      {
+        background-color: orange;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+/* Responsive Design */
+    @media (max-width: 768px)
+    {
+      .header-section h1
+      {
+          font-size: 2rem;
+      }
+
+      .content 
+      {
+        padding: 20px 15px;
+      }
+
+      .book-now-btn button
+      {
+        width: 80%;
+        font-size: 1rem;
+      }
+    }
+    </style>
+  </head>
+  
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar">
+            <img class="logo1" src="./log2.jpg" alt="">
+            <div class="navdiv">
+                <a href="#home">HOME</a>
+                <a href="#aboutus">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#musicalinstruments">MUSICAL INSTRUMENTS</a>
+                <a href="#contactus">CONTACT US</a>
+                <a href="#login">LOGIN</a>
+            </div>
+        </nav>
+        <div class="belownav">
+            <img class="logo2" src="./log3.jpg" alt="">
+            <p class="title">Symphony Music & Arts</p>
+        </div>
+
+  <!-- Banner Image -->
+  <div class="banner">
+    <img src="GitarPage.jpg" alt="Centered Image" />
+  </div>
+
+  <!-- Content Section -->
+  <main class="content">
+    <section class="intro">
+      <h2>Looking for Guitar class in Pune?</h2>
+      <p>
+       Strum your way into the world of music with Guitar Classes at Symphony Music & Arts! Whether you’re a total beginner, a casual hobbyist, or an aspiring performer, our guitar program is designed to help you learn, play, and enjoy music in a fun and structured way.
+       From chords and strumming to solos and songs, our expert instructors make learning guitar easy and exciting — for all ages!
+      </p>
+    </section>
+
+    <section class="progrm">
+      <h2>Why to learn Guitar at Symphony Music & Arts?</h2>
+      <ul>
+      <li>Basic to advanced chords and scales</li>
+      <li>Strumming patterns & fingerpicking techniques</li>
+      <li>Song-playing (English, Hindi & instrumental)</li>
+      <li>Music theory, ear training, and improvisation</li>
+      <li>Improvisation and ear training</li>
+      <li>Performance skills & stage confidence</li>
+      </ul>
+    </section>
+
+    <div class="book-now-btn">
+      <button>Book Now !</button>
+    </div>
+  </main>
+
+  </body>
+</html>
+
+
+
+
+
